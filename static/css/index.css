@@ -1,0 +1,200 @@
+body {
+    font-family: "Montserrat";
+    text-align: center;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    padding: 0;
+    background-color: #65b7f1fa;
+  }
+  
+  .navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    --bs-navbar-hover-color: #fff;
+    --bs-navbar-brand-hover-color: #fff;
+  }
+  .nav-it{
+    margin-top: .5%;
+  }
+  
+  .nav-item {
+    padding: 0 18px;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    font-family: 'Arial', serif;
+    color: #fff;
+    --bs-nav-link-hover-color: #ececec;
+  }
+  
+  /* download buttons */
+  .download-button {
+    margin: 5% 3% 5% 0;
+  }
+  
+  /* title */
+  #title {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: left;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+  }
+  
+  .big-heading {
+    font-size: 3.5rem;
+  }
+  
+
+  .container-fluid {
+    padding: 0% 0% 0%;
+  }
+  
+  /* title image */
+  .title-image {
+    width: 20%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 25%;
+  }
+  
+  @media (max-width: 1028px) {
+    #title {
+      text-align: center;
+    }
+  
+    .title-image {
+      position: static;
+      transform: rotate(0);
+      width: 60%;
+    }
+  }
+  
+  /* Features */
+  #features {
+    margin: 0% 15%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .fa-solid {
+    color: #ef8172;
+    /* font-size: 3.5rem; */
+    margin-bottom: 1rem;
+  }
+  
+  .fa-solid:hover {
+    color: #ff4c68;
+  }
+  
+  .work-ethics {
+    padding: 4.5%
+  }
+  
+  .work-ethics-title {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    color: #8f8f8f;
+    font-family: 'Montagu Slab', serif;
+    font-weight: bold;
+  }
+  
+  /* testimonials */
+  #testimonials {
+    background-color: #ef8172;
+    color: #fff;
+  }
+  
+  .carousel-item {
+    padding: 7% 15%;
+  }
+  
+  .testimonial-text {
+    font-size: 2rem;
+  }
+  
+  .testimonial-image {
+    width: 10%;
+    border-radius: 50%;
+    margin: 20px;
+  }
+  
+  /* press section */
+  #press {
+    background-color: #ef8172;
+    padding-bottom: 3%;
+  }
+  
+  .press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+  }
+  
+  /* Pricing */
+  #pricing {
+    padding: 100px;
+  }
+  
+  .section-heading {
+    font-size: 2rem;
+  }
+  
+  .pricing-columns {
+    padding: 3% 2%;
+  }
+  
+  .pricing-text {
+    font-size: 2rem;
+  }
+  
+  .breed-name {
+    font-size: 1.5rem;
+  }
+
+
+  /* carousel */
+  #carousel{
+    width: 60%;
+    position: relative;
+    margin-left: 20%;
+}
+  
+  /* call to action */
+  #cta {
+    background-color: #ff4c68;
+    color: #fff;
+    padding: 4% 15%;
+  }
+  
+  /* footer */
+  #footer {
+    background-color: #fff;
+    padding: 4% 15%;
+  }
+  
+  .cta-heading {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  
+  .social-media-links {
+    margin: 20px 10px;
+    color: black;
+  }
+  
+  .social-media-links:hover {
+    color: #ff4c68;
+  }
+  
