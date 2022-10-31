@@ -24,9 +24,21 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="../static/css/services.css">
     <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/data.css">
+
 
     <!-- from Fontawesome for icons -->
     <script src="https://kit.fontawesome.com/3892d2da46.js" crossorigin="anonymous"></script>
+
+    <style>
+        td {
+            color: black;
+        }
+
+        body {
+            padding-top: 0;
+        }
+    </style>
 
 </head>
 
@@ -50,10 +62,7 @@
                             <a href="/" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/services" class="nav-link">Services Available</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/location" class="nav-link">ITS Location</a>
+                            <a href="/services" class="nav-link">Services</a>
                         </li>
                         <li class="nav-item">
                             <a href="/serviceproviders" class="nav-link">Service Providers Details</a>
@@ -64,9 +73,31 @@
 
     </section>
 
-    <section class="body">
+    <section class="body" style="margin-bottom: 30%; margin-top: 5%;">
 
-        <h1>Service Providers Details Go Here!</h1>
+        <h1>Service Providers Details</h1>
+
+        <form action="{% url 'presentData' %} " method="post">
+            {% csrf_token %}
+            <table class="table table-bordered" cellpadding="0" cellspacing="0" border="1">
+                <tr class="thead">
+                    <th>Day</th>
+                    <th>Name</th>
+                    <th>Contact No.</th>
+                    <!-- <th>action</th>
+                <th>Present</th> -->
+                </tr>
+                {% for x in form %}
+
+                <tr>
+                    <td>{{x.Day}}</td>
+                    <td> {{x.Name}}</td>
+                    <td>{{x.contact }}</td>
+
+                </tr>
+                {% endfor %}
+            </table>
+        </form>
     </section>
 
     <footer id="footer">

@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services Available</title>
 
-    <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services Available</title>
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100&display=swap"
+    rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
 
   <!-- stylesheet -->
   <link rel="stylesheet" href="../static/css/services.css">
@@ -23,17 +27,81 @@
 
   <!-- from Fontawesome for icons -->
   <script src="https://kit.fontawesome.com/3892d2da46.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: "Montserrat";
+      text-align: center;
+      background-color: #c9ddeb;
+      padding: 5px;
+    }
+
+    .form-div {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .form-control {
+      box-shadow: none !important;
+      outline: none !important;
+      border: 2px solid #cecece;
+      height: 38px;
+    }
+
+    .form-control:hover,
+    .form-control:focus {
+      border-color: #97a0af;
+    }
+
+    .nav-btn {
+      background-color: #032646;
+      border-radius: 5px;
+    }
+
+    .nav-btn:hover {
+      background-color: #b5b6b7;
+    }
+
+    .card {
+      max-width: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .row {
+      margin-top: 20px;
+    }
+
+    input,
+    textarea {
+      border-radius: 4%;
+      border: 1px solid black;
+    }
+
+    .btn-send {
+      width: 95%;
+      background-color: #032646;
+      color: white;
+    }
+
+    .btn-send:hover {
+      background-color: #074176;
+      color: white;
+    }
+  </style>
 
 </head>
+
 <body>
 
   <section id="title">
     <div class="container-fluid">
       <!-- Nav Bar -->
       <nav class="navbar navbar-expand-lg">
-        <img style="height: 50px; width: 50px; margin-right: 1%; margin-left: 0.5%;" src="../static/images/logo.png" alt="VVV">
+        <img style="height: 50px; width: 50px; margin-right: 1%; margin-left: 0.5%;" src="../static/images/logo.png"
+          alt="VVV">
         <a class="navbar-brand nav-it" href="index.html">IT Services</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -42,11 +110,9 @@
               <a href="/" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="/services" class="nav-link">Services Available</a>
+              <a href="/services" class="nav-link">Services</a>
             </li>
-            <li class="nav-item">
-              <a href="/location" class="nav-link">ITS Location</a>
-            </li>
+
             <li class="nav-item">
               <a href="/serviceproviders" class="nav-link">Service Providers Details</a>
             </li>
@@ -56,128 +122,188 @@
 
 
 
-   <div class="body-services">
-     <!-- Services -->
+      <div class="body-services">
+        <!-- Services -->
 
-  <section id="services">
+        <section id="services">
 
-    <table class="table">
-      <thead>
-        <tr>
-          <th class = "th-title service-name service-title" scope="col" width="30%">Services</th>
-          <th class = "th-title" scope="col" width="30%">Rate (Nu.)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class = "service-name">Quick Heal antivirus pro</td>
-          <td>700</td>
-        </tr>
-        <tr>
-          <td class = "service-name">Avast and Smadav</td>
-          <td>30</td>
-        </tr>
-        <tr>
-          <td class = "service-name">Windows update</td>
-          <td>150</td>
-        </tr>
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="th-title service-name service-title" scope="col" width="30%">Services</th>
+                <th class="th-title" scope="col" width="30%">Rate (Nu.)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="service-name">Quick Heal antivirus pro</td>
+                <td>700</td>
+              </tr>
+              <tr>
+                <td class="service-name">Avast and Smadav</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td class="service-name">Windows update</td>
+                <td>150</td>
+              </tr>
 
-        <tr>
-          <td class = "service-name">Office and windows activation</td>
-          <td>20</td>
-        </tr>
+              <tr>
+                <td class="service-name">Office and windows activation</td>
+                <td>20</td>
+              </tr>
 
-        <tr>
-          <td class = "service-name">MS office, WPS office installation</td>
-          <td>50</td>
-        </tr>
+              <tr>
+                <td class="service-name">MS office, WPS office installation</td>
+                <td>50</td>
+              </tr>
 
-        <tr>
-          <td class = "service-name">Autocad, Matlab, Andoroid Studio</td>
-          <td>100</td>
-        </tr>
+              <tr>
+                <td class="service-name">Autocad, Matlab, Andoroid Studio</td>
+                <td>100</td>
+              </tr>
 
-        <tr>
-          <td class = "service-name">Stadpro, Revit, Sketchup pro, Lumen</td>
-          <td>100</td>
-        </tr>
+              <tr>
+                <td class="service-name">Stadpro, Revit, Sketchup pro, Lumen</td>
+                <td>100</td>
+              </tr>
 
-        <tr>
-          <td class = "service-name">Adobe product</td>
-          <td>50</td>
-        </tr>
+              <tr>
+                <td class="service-name">Adobe product</td>
+                <td>50</td>
+              </tr>
 
-        <tr>
-          <td class = "service-name">Driver issue</td>
-          <td>150</td>
-        </tr>
+              <tr>
+                <td class="service-name">Driver issue</td>
+                <td>150</td>
+              </tr>
 
-        <tr>
-          <td class = "service-name">Python, Anaconda, Pycharm</td>
-          <td>150</td>
-        </tr>
+              <tr>
+                <td class="service-name">Python, Anaconda, Pycharm</td>
+                <td>150</td>
+              </tr>
 
-        <tr>
-          <td class = "service-name">Disk Partition</td>
-          <td>30</td>
-        </tr>
+              <tr>
+                <td class="service-name">Disk Partition</td>
+                <td>30</td>
+              </tr>
 
-        <tr>
-          <td class = "service-name">Disk Clean up</td>
-          <td>20</td>
-        </tr>
+              <tr>
+                <td class="service-name">Disk Clean up</td>
+                <td>20</td>
+              </tr>
 
-        <tr>
-          <td class = "service-name">Windows format</td>
-          <td>150</td>
-        </tr>
+              <tr>
+                <td class="service-name">Windows format</td>
+                <td>150</td>
+              </tr>
 
-        <tr>
-          <td class = "service-name">Laptop Clean up</td>
-          <td>50</td>
-        </tr>
+              <tr>
+                <td class="service-name">Laptop Clean up</td>
+                <td>50</td>
+              </tr>
 
-        <tr>
-          <td class = "service-name">Coding editors</td>
-          <td>30</td>
-        </tr>
+              <tr>
+                <td class="service-name">Coding editors</td>
+                <td>30</td>
+              </tr>
 
-        <tr>
-          <td class = "service-name">IDE</td>
-          <td>50</td>
-        </tr>
+              <tr>
+                <td class="service-name">IDE</td>
+                <td>50</td>
+              </tr>
 
-        <tr>
-          <td class = "service-name">Ethernet Cable</td>
-          <td>50/m</td>
-        </tr>
+              <tr>
+                <td class="service-name">Ethernet Cable</td>
+                <td>50/m</td>
+              </tr>
 
-        <tr>
-          <td class = "service-name">System update</td>
-          <td>100</td>
-        </tr>
-      </tbody>
-    </table>
-    
-  </section>
+              <tr>
+                <td class="service-name">System update</td>
+                <td>100</td>
+              </tr>
+            </tbody>
+          </table>
 
-  
-  <footer id="footer">
+        </section>
 
-    <div class="social-media-links footer-social">
-      <i class="social-media-links fa-brands fa-twitter"></i>
-      <a href="https://www.facebook.com/rubacmchapter"><i class="social-media-links fa-brands fa-facebook-f"></i></a>
-      <i class="social-media-links fa-brands fa-instagram"></i>
-      <a href="mailto:acmstudentchapter.cst@rub.edu.bt"><i class="social-media-links fa-solid fa-envelope"></i></a>
-    </div>
-    <p>ITS Services <br> © ACM Chapter@2022</p>
+        <div class="container-fluid px-1 py-5 mx-auto">
+          <div class="row d-flex justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+              <h3>
+                Book the service
+              </h3>
+              <p class="blue-text">Use the following form to contact us and request services..</p>
+              <div class="card">
 
-  </footer>
-   </div>
+                <form class="form-card" method="POST" action="{% url 'booking' %}">
+                  {% csrf_token %}
+                  <div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex">
+                      <label class="form-control-label px-3">First name<span class="text-danger"> *</span>
+                      </label>
+                      <input required type="text" id="fname" name="fname" placeholder="" onblur="validate(1)">
+                    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+                    <div class="form-group col-sm-6 flex-column d-flex">
+                      <label class="form-control-label px-3">Last name<span class="text-danger"> *</span></label>
+                      <input required type="text" id="lname" name="lname" placeholder="" onblur="validate(2)">
+                    </div>
+
+                  </div>
+
+                  <div class="row justify-content-between text-left">
+
+                    <div class="form-group col-sm-6 flex-column d-flex">
+                      <label class="form-control-label px-3">Email<span class="text-danger"> *</span>
+                      </label>
+                      <input type="text" id="email" name="email" placeholder="" onblur="validate(3)" required>
+                    </div>
+
+                    <div class="form-group col-sm-6 flex-column d-flex">
+                      <label class="form-control-label px-3">Phone number<span class="text-danger"> *</span></label>
+                      <input type="text" id="mob" name="mobile" placeholder="" onblur="validate(4)" required>
+                    </div>
+
+                  </div>
+
+                  <div class="row justify-content-between text-left">
+                    <div class="form-group col-12 flex-column d-flex">
+                      <label class="form-control-label px-3">Your request<span class="text-danger"> *</span></label>
+                      <textarea type="text" id="ans" name="request" placeholder="" onblur="validate(6)"
+                        required></textarea>
+                    </div>
+                  </div>
+                  <div class="row justify-content-end">
+                    <div class="form-group col-sm-6"> <button type="submit"
+                        class="btn-block btn-primary btn-send">Send</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer id="footer">
+
+          <div class="social-media-links footer-social">
+            <i class="social-media-links fa-brands fa-twitter"></i>
+            <a href="https://www.facebook.com/rubacmchapter"><i
+                class="social-media-links fa-brands fa-facebook-f"></i></a>
+            <i class="social-media-links fa-brands fa-instagram"></i>
+            <a href="mailto:acmstudentchapter.cst@rub.edu.bt"><i
+                class="social-media-links fa-solid fa-envelope"></i></a>
+          </div>
+          <p>ITS Services <br> © ACM Chapter@2022</p>
+
+        </footer>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
-
-

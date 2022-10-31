@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../static/css/appointment.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <form action="{% url 'appointment' %}" method="post">
+    {% csrf_token %}
+    <div class="container">
+      <div class="title">Record the Services</div>
+      <div class="content">
+        <form action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Student ID: </span>
+              <input type="text" class="input-field" id="service_provider" name="service_provider"
+                placeholder="Enter service provider ID" required style="height: 40px;">
+            </div>
+            <div class="input-box">
+              <span class="details">Service: </span>
+              <input type="text" class="input-field" name="service" placeholder="Enter the service provided"
+                id="service" required style="height: 40px;">
+            </div>
+            <div class="input-box">
+              <span class="details">Customer ID: </span>
+              <input type="text" class="input-field" id="Customer_id" name="Customer_id" placeholder="Enter Customer ID"
+                required style="height: 40px;">
+            </div>
+            <div class="input-box">
+              <span class="details">Rate: </span>
+              <input type="text" class="input-field" id="Rate" name="Rate" placeholder="Enter Amount" required
+                style="height: 40px;">
+            </div>
+            <div class="input-box">
+              <span class="details">Remarks: </span>
+              <input type="char" class="input-field" name="Remarks" placeholder="Remarks (paid/not paid)" id="Remarks"
+                required style="height: 40px;">
+            </div>
+            <div class="input-box">
+              <span class="details">Date: </span>
+              <input type="date" class="input-field" name="Date" placeholder="Remarks" id="Remarks" required
+                style="height: 40px;">
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Save">
+          </div>
+        </form>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>

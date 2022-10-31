@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Team</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-color: #49a2f0;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        margin: 30px 5px;
+        color: white;
+    }
+
+    .heading {
+        font-size: 60px;
+        color: white;
+    }
+
+    .heading span {
+        font-style: normal;
+        font-size: 30px;
+    }
+
+    .profiles {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 80px;
+    }
+
+    .profile {
+        flex-basis: 260px;
+        margin-left: 50px;
+    }
+
+    .profile .profile-img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        filter: grayscale(100%);
+        cursor: pointer;
+        transition: 400ms;
+    }
+
+    .profile:hover .profile-img {
+        filter: grayscale(0);
+    }
+
+    .user-name {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+    .profile h5 {
+        font-size: 18px;
+        font-weight: 100;
+        letter-spacing: 3px;
+        color: #ccc;
+    }
+
+    .profile p {
+        font-size: 16px;
+        margin-top: 20px;
+        text-align: justify;
+    }
+
+    @media only screen and (max-width: 1150px) {
+
+
+        .profiles {
+            flex-direction: column;
+
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile p {
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        .heading {
+            font-size: 40px;
+            color: white;
+            text-align: center;
+        }
+
+        .heading span {
+            font-size: 15px;
+        }
+
+        .profiles {
+            margin: 20px 0;
+        }
+
+
+        .desc {
+            margin-left: 10px;
+        }
+    }
+
+    .top {
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="top">
+            <h1 class="heading"><span>Our Team</h1>
+            <p class="desc">We are group number 7 with 5 of us who workd of this project ITS <br>
+                (Information Teachnology Services) log book </p>
+        </div>
+
+        <div class="profiles" style="margin-top: 5%;">
+            <div class="profile">
+                <img src="../static/images/ratnay.jpg" class="profile-img" />
+
+                <h3 class="user-name">Ratnay</h3>
+                <h5>Leader</h5>
+                <p>Member 1</p>
+            </div>
+            <div class="profile">
+                <img src="../static/images/nams.jpg" class="profile-img" />
+
+                <h3 class="user-name">Namgay</h3>
+                <h5>Member</h5>
+                <p>Member 2</p>
+            </div>
+            <div class="profile">
+                <img src="../static/images/tashi.jpg" class="profile-img" />
+
+                <h3 class="user-name">Tashi</h3>
+                <h5>Member</h5>
+                <p>Member 3</p>
+            </div>
+            <div class="profile">
+                <img src="../static/images/ugyen.jpg" class="profile-img" />
+
+                <h3 class="user-name">Ugyen</h3>
+                <h5>Member</h5>
+                <p>Member 4</p>
+            </div>
+            <div class="profile">
+                <img src="../static/images/raj.jpg" class="profile-img" />
+
+                <h3 class="user-name">Raj</h3>
+                <h5>Member</h5>
+                <p>Member 5</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
